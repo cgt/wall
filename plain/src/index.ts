@@ -1,5 +1,3 @@
-import { Greeter } from './Greeter';
+import { renderGreeting } from './renderGreeting';
 
-const greeting = document.createElement('h1');
-greeting.textContent = new Greeter("Hello").greet("World");
-document.querySelector('body')?.appendChild(greeting);
+renderGreeting();
