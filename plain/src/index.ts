@@ -1,4 +1,5 @@
 import { Greeter } from './Greeter';
 
-const greeter = new Greeter("Hello");
-console.log(greeter.greet("World"));
+const greeting = document.createElement('h1');
+greeting.textContent = new Greeter("Hello").greet("World");
+document.querySelector('body')?.appendChild(greeting);
