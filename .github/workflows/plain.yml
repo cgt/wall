@@ -7,13 +7,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+
     - uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - working-directory: './plain'
+
     - name: Install dependencies
-    - run: yarn install
+      run: yarn install
+      working-directory: './plain'
+
     - name: Build
-    - run: yarn build
+      run: yarn build
+      working-directory: './plain'
+
     - name: Test
-    - run: yarn test
+      run: yarn test
+      working-directory: './plain'
