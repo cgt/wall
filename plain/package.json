@@ -2,5 +2,9 @@
   "name": "plain",
   "version": "1.0.0",
   "main": "index.js",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
 }
